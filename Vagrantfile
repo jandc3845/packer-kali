@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
 ### KALI
   config.vm.define "kali", primary: true do |kali|
     kali.vm.network "private_network", ip: "172.16.189.5", :adapter => 2, :mac => "080027f34a5d"
-    kali.vm.box = "location/of/local/box"
+    kali.vm.box = "blackfin/kali"
     
     
     
